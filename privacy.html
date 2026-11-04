@@ -1,49 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — VAT Check</title>
-<style>
-  body { font-family: system-ui, -apple-system, Segoe UI, sans-serif; max-width: 680px;
-         margin: 3rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
-  h1 { font-size: 1.6rem; }
-  .muted { color: #666; font-size: .9rem; }
-</style>
-</head>
-<body>
-<h1>Privacy Policy — VAT Check</h1>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Privacy Policy — VAT Check</title>
+<style>body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;max-width:680px;margin:3rem auto;padding:0 1.25rem;line-height:1.6;color:#1a1a1a}h1{font-size:1.6rem}.muted{color:#666;font-size:.9rem}nav{margin:1rem 0}nav a{margin-right:.8rem}</style></head>
+<body><h1>Privacy Policy — VAT Check</h1>
+<nav aria-label="Site navigation"><a href="index.html">Home</a> <a href="terms.html">Terms</a> <a href="support.html">Support</a> <a href="developer.html">Developer</a></nav>
 <p class="muted">Last updated: November 2026</p>
-
-<p><strong>VAT Check</strong> is a Google Sheets add-on that validates EU VAT numbers
-against the official VIES register of the European Commission.</p>
-
-<h2>What data is processed</h2>
-<p>The add-on reads the VAT numbers <em>you</em> select in your spreadsheet and sends each
-one to the European Commission's VIES service to check whether it is valid. The VIES service
-returns the registered business name and address for valid numbers.</p>
-
-<h2>Where data is stored</h2>
-<p>Everything happens inside your own Google Sheet:</p>
-<ul>
-<li>Results are written to a <strong>VAT Results</strong> sheet you control.</li>
-<li>A hidden <strong>_VAT_CACHE</strong> sheet stores the results of previous lookups with a
-timestamp, so repeat lookups are instant and you have an audit trail.</li>
-</ul>
-<p>We operate <strong>no server</strong>. We do not store, transmit, or receive your data
-anywhere except the two destinations above: your own Google Sheet and the official VIES
-service.</p>
-
-<h2>What we do not do</h2>
-<ul>
-<li>No analytics, no tracking, no cookies.</li>
-<li>No data is sold or shared with any third party.</li>
-<li>No data leaves your Google account except the VAT number sent to VIES (an EU
-institution) for validation.</li>
-</ul>
-
-<h2>Contact</h2>
-<p>For any privacy question, contact the developer at the support email listed on the
-Google Workspace Marketplace listing.</p>
-</body>
-</html>
+<p><strong>VAT Check</strong> is a Google Sheets™ add-on that validates EU VAT numbers against the official VIES register of the European Commission.</p>
+<h2>What data is processed</h2><p>The add-on reads the VAT numbers <em>you</em> select in your spreadsheet and sends each one to the European Commission's VIES service to check whether it is valid. The VIES service returns the registered business name and address for valid numbers.</p>
+<h2>Where data is stored</h2><p>Results are written to your own spreadsheet:</p><ul><li>Results are written to a <strong>VAT Results</strong> sheet you control.</li><li>A hidden <strong>_VAT_CACHE</strong> sheet stores previous lookup results with timestamps. Results can be reused from the cache for 30 days; records remain in the spreadsheet until you delete them.</li></ul>
+<p>VAT Check also keeps a usage counter in Apps Script™ <code>ScriptProperties</code> to count new checks for the free monthly allowance. The add-on operates no separate server and does not store a user profile or email address. VAT numbers and results are sent only to your spreadsheet and, for validation, the official VIES service.</p>
+<h2>Removing stored results</h2><p>You can delete the VAT Results and _VAT_CACHE sheets from your spreadsheet to remove their contents. Removing the add-on alone does not delete those sheets. The monthly counter in ScriptProperties records a month and count, not VAT numbers or user identifiers.</p><h2>Platform permissions</h2><p>The platform may request basic identity permissions needed for the add-on environment. VAT Check does not read or store your profile or email address and does not share identity data with VIES.</p>
+<h2>What we do not do</h2><ul><li>No analytics, no tracking, no cookies.</li><li>No data is sold or shared for advertising. VAT numbers are disclosed to VIES for the validation you request; the add-on runs on Google Apps Script™.</li></ul>
+<h2>Google API Services User Data Policy</h2><p>VAT Check's use and transfer of information received from Google APIs complies with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<h2>Contact</h2><p>For privacy questions, contact Alejandro Oceja at <a href="mailto:khavel112@gmail.com">khavel112@gmail.com</a>.</p>
+<p class="muted">Google Sheets and Google Workspace are trademarks of Google LLC.</p></body></html>
