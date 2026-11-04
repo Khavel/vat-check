@@ -3,47 +3,42 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — VAT Check</title>
+<title>VAT Check — validate EU VAT numbers in Google Sheets</title>
 <style>
   body { font-family: system-ui, -apple-system, Segoe UI, sans-serif; max-width: 680px;
          margin: 3rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
-  h1 { font-size: 1.6rem; }
+  h1 { font-size: 1.7rem; }
+  .lead { font-size: 1.05rem; color: #333; }
+  .card { border: 1px solid #e5e5e5; border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0; }
+  a { color: #0b57d0; }
   .muted { color: #666; font-size: .9rem; }
 </style>
 </head>
 <body>
-<h1>Privacy Policy — VAT Check</h1>
-<p class="muted">Last updated: November 2026</p>
+<h1>VAT Check</h1>
+<p class="lead">Validate EU VAT numbers in Google Sheets with the official VIES register —
+in bulk, with a timestamped audit trail.</p>
 
-<p><strong>VAT Check</strong> is a Google Sheets add-on that validates EU VAT numbers
-against the official VIES register of the European Commission.</p>
-
-<h2>What data is processed</h2>
-<p>The add-on reads the VAT numbers <em>you</em> select in your spreadsheet and sends each
-one to the European Commission's VIES service to check whether it is valid. The VIES service
-returns the registered business name and address for valid numbers.</p>
-
-<h2>Where data is stored</h2>
-<p>Everything happens inside your own Google Sheet:</p>
-<ul>
-<li>Results are written to a <strong>VAT Results</strong> sheet you control.</li>
-<li>A hidden <strong>_VAT_CACHE</strong> sheet stores the results of previous lookups with a
-timestamp, so repeat lookups are instant and you have an audit trail.</li>
+<div class="card">
+<strong>What it does</strong>
+<ul style="margin:.5rem 0 .5rem 1.2rem; padding:0">
+<li>Validates any EU VAT number (ES, DE, FR, IT, NL, …) using the European Commission's
+    official VIES service.</li>
+<li>Returns the registered business name and address.</li>
+<li>Writes results to a dedicated <em>VAT Results</em> sheet — never over your data.</li>
+<li>Caches every lookup for 30 days, with a hidden audit-trail sheet.</li>
 </ul>
-<p>We operate <strong>no server</strong>. We do not store, transmit, or receive your data
-anywhere except the two destinations above: your own Google Sheet and the official VIES
-service.</p>
+</div>
 
-<h2>What we do not do</h2>
-<ul>
-<li>No analytics, no tracking, no cookies.</li>
-<li>No data is sold or shared with any third party.</li>
-<li>No data leaves your Google account except the VAT number sent to VIES (an EU
-institution) for validation.</li>
-</ul>
+<div class="card">
+<strong>Pricing</strong>
+<p style="margin:.4rem 0">Free: <strong>25 checks per month</strong>. Cached lookups are
+always free.</p>
+</div>
 
-<h2>Contact</h2>
-<p>For any privacy question, contact the developer at the support email listed on the
-Google Workspace Marketplace listing.</p>
+<p>Install it from the Google Workspace Marketplace, or read the
+<a href="https://github.com/Khavel/vat-check">source on GitHub</a>.</p>
+
+<p class="muted"><a href="/vat-check/privacy.html">Privacy policy</a></p>
 </body>
 </html>
